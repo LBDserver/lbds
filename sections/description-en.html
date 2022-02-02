@@ -2,15 +2,14 @@
 <span class="markdown">
 The LBDserver builds upon the <a href="https://www.w3.org/TR/ldp/">Linked Data Platform</a> and the <a href="https://solidproject.org/">Solid</a> specifications for decentral data organisation. The LBDserver vocabulary adds to this in several ways:
 <ul>
-<li>Defining <a href="#Aggregator">lbds:Aggregator</a> as a specific instance of Solid-based LDP containers that may also aggregate (<a href="#aggregates">lbds:aggregates</a>) resources and containers that are not stored in the pod of the aggregator. An aggregator can contain other aggregators, but eventually it groups instances of <a href="#PartialProject">lbds:PartialProject</a>, where stakeholders to an AEC project store their contributions.</li>
+    <li>Defining <a href="#Aggregator">lbds:Aggregator</a> as a specific instance of Solid-based LDP containers that may also aggregate (<a href="#aggregates">lbds:aggregates</a>) resources and containers that are not stored in the pod of the aggregator. An aggregator can contain other aggregators, but eventually it groups instances of <a href="#PartialProject">lbds:PartialProject</a>, where stakeholders to an AEC project store their contributions.</li>
     <li>Defining specific sub-properties for describing LBDserver registries, located in a <a href="#PartialProject">lbds:PartialProject</a>: <a href="#DatasetRegistry">lbds:DatasetRegistry</a>, <a href="#ReferenceRegistry">lbds:ReferenceRegistry</a> and <a href="#ServiceRegistry">lbds:ServiceRegistry</a></li>
-
-
     <li>Defining a structure to link sub-document identifiers in a free way, using a <a href="#ReferenceRegistry">lbds:ReferenceRegistry</a>. This structure largely bases upon the Information Container for Linked Document Delivery (ICDD, ISO 21597) but differs on important parts.</li>
+    <li>Allowing highly trusted services to work on a specific (part of a) Solid Pod. These services may have different purposes, going from synchronisation over messaging to specialised storage (e.g. offering a SPARQL endpoint on top of a Pod or Partial Project). In the LBDserver, these are called "satellites" (<a href="#Satellite">lbds:Satellite</a>)</li>
 </ul>
 <div align="center">
-    <img src="resources/overall_documentation.png" alt="project structure"><figcaption>Discovery path for LBDserver projects</figcaption>
-    <img src="resources/LBD_ICDD.png" alt="subdocument linking"><figcaption>Sub-document linking in LBDserver projects</figcaption>
+    <img src="resources/overall_documentation.png" alt="project structure"><figcaption>Figure 1: Discovery path for LBDserver projects</figcaption>
+    <img src="resources/LBD-ICDD.png" alt="subdocument linking"><figcaption>Figure 2: Sub-document linking in LBDserver projects</figcaption>
 </div>
 
 </span>
