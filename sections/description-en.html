@@ -1,4 +1,17 @@
 <h2 id="desc" class="list">LBDserver vocabulary: Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 <span class="markdown">
-This is a placeholder text for the description of your ontology. The description should include an explanation and a diagram explaining how the classes are related, examples of usage, etc.</span>
+The LBDserver builds upon the <a href="https://www.w3.org/TR/ldp/">Linked Data Platform</a> and the <a href="https://solidproject.org/">Solid</a> specifications for decentral data organisation. The LBDserver vocabulary adds to this in several ways:
+<ul>
+<li>Defining <a href="#Aggregator">lbds:Aggregator</a> as a specific instance of Solid-based LDP containers that may also aggregate (<a href="#aggregates">lbds:aggregates</a>) resources and containers that are not stored in the pod of the aggregator. An aggregator can contain other aggregators, but eventually it groups instances of <a href="#PartialProject">lbds:PartialProject</a>, where stakeholders to an AEC project store their contributions.</li>
+    <li>Defining specific sub-properties for describing LBDserver registries, located in a <a href="#PartialProject">lbds:PartialProject</a>: <a href="#DatasetRegistry">lbds:DatasetRegistry</a>, <a href="#ReferenceRegistry">lbds:ReferenceRegistry</a> and <a href="#ServiceRegistry">lbds:ServiceRegistry</a></li>
+
+
+    <li>Defining a structure to link sub-document identifiers in a free way, using a <a href="#ReferenceRegistry">lbds:ReferenceRegistry</a>. This structure largely bases upon the Information Container for Linked Document Delivery (ICDD, ISO 21597) but differs on important parts.</li>
+</ul>
+<div align="center">
+    <img src="resources/overall_documentation.png" alt="project structure"><figcaption>Discovery path for LBDserver projects</figcaption>
+    <img src="resources/LBD_ICDD.png" alt="subdocument linking"><figcaption>Sub-document linking in LBDserver projects</figcaption>
+</div>
+
+</span>
 
