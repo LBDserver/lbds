@@ -1,0 +1,178 @@
+<https://w3id.org/lbdserver#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/lbdserver#> <http://www.w3.org/2002/07/owl#versionIRI> <urn:absolute:0.0.1> .
+<https://w3id.org/lbdserver#> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/ns/dcat> .
+<https://w3id.org/lbdserver#> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/ns/ldp#> .
+<https://w3id.org/lbdserver#> <http://purl.org/dc/terms/contributor> "Erik Mannens" .
+<https://w3id.org/lbdserver#> <http://purl.org/dc/terms/contributor> "Jakob Beetz" .
+<https://w3id.org/lbdserver#> <http://purl.org/dc/terms/contributor> "Pieter Pauwels" .
+<https://w3id.org/lbdserver#> <http://purl.org/dc/terms/creator> "Jeroen Werbrouck" .
+<https://w3id.org/lbdserver#> <http://purl.org/dc/terms/issued> "2022-02-01T12:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/lbdserver#> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/1.0/> .
+<https://w3id.org/lbdserver#> <http://purl.org/dc/terms/title> "LBDserver vocabulary" .
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/lbdserver#aggregates
+<https://w3id.org/lbdserver#aggregates> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/lbdserver#aggregates> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/ns/ldp#contains> .
+<https://w3id.org/lbdserver#aggregates> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/lbdserver#Aggregator> .
+# 
+# https://w3id.org/lbdserver#hasDatasetRegistry
+<https://w3id.org/lbdserver#hasDatasetRegistry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/lbdserver#hasDatasetRegistry> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/lbdserver#hasRegistry> .
+<https://w3id.org/lbdserver#hasDatasetRegistry> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/lbdserver#PartialProject> .
+<https://w3id.org/lbdserver#hasDatasetRegistry> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/lbdserver#DatasetRegistry> .
+<https://w3id.org/lbdserver#hasDatasetRegistry> <http://www.w3.org/2000/01/rdf-schema#label> "has dataset registry"@en .
+# 
+# https://w3id.org/lbdserver#hasIdentifier
+<https://w3id.org/lbdserver#hasIdentifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/lbdserver#hasIdentifier> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/lbdserver#Reference> .
+<https://w3id.org/lbdserver#hasIdentifier> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/lbdserver#Identifier> .
+<https://w3id.org/lbdserver#hasIdentifier> <http://www.w3.org/2000/01/rdf-schema#label> "has identifier"@en .
+# 
+# https://w3id.org/lbdserver#hasProjectRegistry
+<https://w3id.org/lbdserver#hasProjectRegistry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/lbdserver#hasProjectRegistry> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/lbdserver#ProjectRegistry> .
+<https://w3id.org/lbdserver#hasProjectRegistry> <http://www.w3.org/2000/01/rdf-schema#label> "has project registry"@en .
+# 
+# https://w3id.org/lbdserver#hasReference
+<https://w3id.org/lbdserver#hasReference> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/lbdserver#hasReference> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/lbdserver#Concept> .
+<https://w3id.org/lbdserver#hasReference> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/lbdserver#Reference> .
+<https://w3id.org/lbdserver#hasReference> <http://www.w3.org/2000/01/rdf-schema#label> "has reference"@en .
+# 
+# https://w3id.org/lbdserver#hasReferenceRegistry
+<https://w3id.org/lbdserver#hasReferenceRegistry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/lbdserver#hasReferenceRegistry> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/lbdserver#hasRegistry> .
+<https://w3id.org/lbdserver#hasReferenceRegistry> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/lbdserver#PartialProject> .
+<https://w3id.org/lbdserver#hasReferenceRegistry> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/lbdserver#ReferenceRegistry> .
+<https://w3id.org/lbdserver#hasReferenceRegistry> <http://www.w3.org/2000/01/rdf-schema#label> "has reference registry"@en .
+# 
+# https://w3id.org/lbdserver#hasRegistry
+<https://w3id.org/lbdserver#hasRegistry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/lbdserver#hasRegistry> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/ns/ldp#contains> .
+<https://w3id.org/lbdserver#hasRegistry> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/lbdserver#PartialProject> .
+<https://w3id.org/lbdserver#hasRegistry> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/lbdserver#Registry> .
+<https://w3id.org/lbdserver#hasRegistry> <http://www.w3.org/2000/01/rdf-schema#label> "has Registry"@en .
+# 
+# https://w3id.org/lbdserver#hasSatellite
+<https://w3id.org/lbdserver#hasSatellite> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/lbdserver#hasSatellite> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/dcat#Dataset> .
+<https://w3id.org/lbdserver#hasSatellite> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/lbdserver#Satellite> .
+<https://w3id.org/lbdserver#hasSatellite> <http://www.w3.org/2000/01/rdf-schema#label> "has Satellite"@en .
+# 
+# https://w3id.org/lbdserver#hasServiceRegistry
+<https://w3id.org/lbdserver#hasServiceRegistry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/lbdserver#hasServiceRegistry> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/lbdserver#hasRegistry> .
+<https://w3id.org/lbdserver#hasServiceRegistry> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/lbdserver#PartialProject> .
+<https://w3id.org/lbdserver#hasServiceRegistry> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/lbdserver#ServiceRegistry> .
+<https://w3id.org/lbdserver#hasServiceRegistry> <http://www.w3.org/2000/01/rdf-schema#label> "has service registry"@en .
+# 
+# https://w3id.org/lbdserver#hasSparqlSatellite
+<https://w3id.org/lbdserver#hasSparqlSatellite> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/lbdserver#hasSparqlSatellite> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/lbdserver#hasSatellite> .
+<https://w3id.org/lbdserver#hasSparqlSatellite> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/lbdserver#SparqlSatellite> .
+<https://w3id.org/lbdserver#hasSparqlSatellite> <http://www.w3.org/2000/01/rdf-schema#label> "has SPARQL satellite"@en .
+# 
+# https://w3id.org/lbdserver#inDataset
+<https://w3id.org/lbdserver#inDataset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/lbdserver#inDataset> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/lbdserver#Reference> .
+<https://w3id.org/lbdserver#inDataset> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/dcat#Dataset> .
+<https://w3id.org/lbdserver#inDataset> <http://www.w3.org/2000/01/rdf-schema#label> "in dataset"@en .
+# 
+# https://w3id.org/lbdserver#inDistribution
+<https://w3id.org/lbdserver#inDistribution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/lbdserver#inDistribution> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://w3id.org/lbdserver#inDistribution> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/lbdserver#Identifier> .
+<https://w3id.org/lbdserver#inDistribution> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/dcat#Distribution> .
+<https://w3id.org/lbdserver#inDistribution> <http://www.w3.org/2000/01/rdf-schema#label> "in distribution"@en .
+# 
+# https://w3id.org/lbdserver#partOfProject
+<https://w3id.org/lbdserver#partOfProject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/lbdserver#partOfProject> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/lbdserver#PartialProject> .
+<https://w3id.org/lbdserver#partOfProject> <http://www.w3.org/2000/01/rdf-schema#label> "part of project" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/lbdserver#Aggregator
+<https://w3id.org/lbdserver#Aggregator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/lbdserver#Aggregator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/ldp#Container> .
+<https://w3id.org/lbdserver#Aggregator> <http://www.w3.org/2000/01/rdf-schema#comment> "An lbds:Aggregator is an ldp:Container instance on a Solid Pod. Contrary to classic Solid-based LDP containers, an aggregator may also point to remote resources and containers." .
+<https://w3id.org/lbdserver#Aggregator> <http://www.w3.org/2000/01/rdf-schema#label> "aggregator" .
+# 
+# https://w3id.org/lbdserver#Concept
+<https://w3id.org/lbdserver#Concept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/lbdserver#Concept> <http://www.w3.org/2000/01/rdf-schema#comment> "An lbds:Concept is an abstract concept, which should only be semantically enriched via lbds:Reference instances." .
+<https://w3id.org/lbdserver#Concept> <http://www.w3.org/2000/01/rdf-schema#label> "Concept" .
+# 
+# https://w3id.org/lbdserver#DatasetRegistry
+<https://w3id.org/lbdserver#DatasetRegistry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/lbdserver#DatasetRegistry> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/lbdserver#Registry> .
+<https://w3id.org/lbdserver#DatasetRegistry> <http://www.w3.org/2000/01/rdf-schema#comment> "A dcat:Catalog containing generic project datasets." .
+<https://w3id.org/lbdserver#DatasetRegistry> <http://www.w3.org/2000/01/rdf-schema#label> "Dataset Registry" .
+# 
+# https://w3id.org/lbdserver#Identifier
+<https://w3id.org/lbdserver#Identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/lbdserver#Identifier> <http://www.w3.org/2000/01/rdf-schema#comment> "The identifier of a reference in a particular dcat:Distribution instance." .
+<https://w3id.org/lbdserver#Identifier> <http://www.w3.org/2000/01/rdf-schema#label> "Identifier" .
+# 
+# https://w3id.org/lbdserver#PartialProject
+<https://w3id.org/lbdserver#PartialProject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/lbdserver#PartialProject> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/dcat#Catalog> .
+<https://w3id.org/lbdserver#PartialProject> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/ldp#Container> .
+<https://w3id.org/lbdserver#PartialProject> <http://www.w3.org/2000/01/rdf-schema#comment> "An lbd:container with well-defined contributions of one stakeholder in the federated project." .
+<https://w3id.org/lbdserver#PartialProject> <http://www.w3.org/2000/01/rdf-schema#label> "Partial Project" .
+# 
+# https://w3id.org/lbdserver#ProjectRegistry
+<https://w3id.org/lbdserver#ProjectRegistry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/lbdserver#ProjectRegistry> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/lbdserver#Aggregator> .
+<https://w3id.org/lbdserver#ProjectRegistry> <http://www.w3.org/2000/01/rdf-schema#label> "project registry" .
+# 
+# https://w3id.org/lbdserver#Reference
+<https://w3id.org/lbdserver#Reference> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/lbdserver#Reference> <http://www.w3.org/2000/01/rdf-schema#comment> "An lbds:Reference is the digital manifestation of an abstract concept (lbds:Concept)." .
+<https://w3id.org/lbdserver#Reference> <http://www.w3.org/2000/01/rdf-schema#label> "Reference" .
+# 
+# https://w3id.org/lbdserver#ReferenceRegistry
+<https://w3id.org/lbdserver#ReferenceRegistry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/lbdserver#ReferenceRegistry> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/lbdserver#Registry> .
+<https://w3id.org/lbdserver#ReferenceRegistry> <http://www.w3.org/2000/01/rdf-schema#comment> "A dcat:Catalog instance that refers to a registry with lbds:Concept-s and their references (lbds:Reference) and identifiers (lbds:Identifier)." .
+<https://w3id.org/lbdserver#ReferenceRegistry> <http://www.w3.org/2000/01/rdf-schema#label> "Reference Registry" .
+# 
+# https://w3id.org/lbdserver#Registry
+<https://w3id.org/lbdserver#Registry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/lbdserver#Registry> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/dcat#Catalog> .
+# 
+# https://w3id.org/lbdserver#Satellite
+<https://w3id.org/lbdserver#Satellite> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/lbdserver#Satellite> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/dcat#DataService> .
+<https://w3id.org/lbdserver#Satellite> <http://www.w3.org/2000/01/rdf-schema#comment> "An lbds:Satellite is a highly trusted service, connected to very few Solid Pods. It may function as an alternative storage mechanism, providing specific access to (nested) ldp:Containers, dcat:Datasets, dcat:Catalogs or dcat:Distributions. Satellites can also be thought of as 'digital assistents' to a Pod, aiding in synchronisation, data management etc. When working on a Solid Pod, it must be able to check access rights." .
+<https://w3id.org/lbdserver#Satellite> <http://www.w3.org/2000/01/rdf-schema#label> "Satellite" .
+# 
+# https://w3id.org/lbdserver#ServiceRegistry
+<https://w3id.org/lbdserver#ServiceRegistry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/lbdserver#ServiceRegistry> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/lbdserver#Registry> .
+<https://w3id.org/lbdserver#ServiceRegistry> <http://www.w3.org/2000/01/rdf-schema#comment> "A dcat:Catalog containing datasets which refer to services." .
+<https://w3id.org/lbdserver#ServiceRegistry> <http://www.w3.org/2000/01/rdf-schema#label> "Service Registry" .
+# 
+# https://w3id.org/lbdserver#SparqlSatellite
+<https://w3id.org/lbdserver#SparqlSatellite> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/lbdserver#SparqlSatellite> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/lbdserver#Satellite> .
+<https://w3id.org/lbdserver#SparqlSatellite> <http://www.w3.org/2000/01/rdf-schema#comment> "A SPARQL Satellite is a specifiic sort of satellite, mirroring RDF resources on the Pod and allowing to query their union with SPARQL. The satellite should check the access rights for every result it acquires." .
+<https://w3id.org/lbdserver#SparqlSatellite> <http://www.w3.org/2000/01/rdf-schema#comment> "SPARQL Satellite" .
+<https://w3id.org/lbdserver#SparqlSatellite> <http://www.w3.org/2000/01/rdf-schema#label> "SPARQL satellite" .
+# 
+# Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/

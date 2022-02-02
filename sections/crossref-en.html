@@ -1,0 +1,710 @@
+<h2 id="crossreference" class="list">Cross reference for LBDserver vocabulary classes, properties and dataproperties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by LBDserver vocabulary.
+<div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="classes">
+   <h3 id="classes-headline" class="list">Classes</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#Aggregator" title="https://w3id.org/lbdserver#Aggregator">aggregator</a>
+      </li>
+      <li>
+         <a href="#Concept" title="https://w3id.org/lbdserver#Concept">Concept</a>
+      </li>
+      <li>
+         <a href="#DatasetRegistry" title="https://w3id.org/lbdserver#DatasetRegistry">Dataset Registry</a>
+      </li>
+      <li>
+         <a href="#Identifier" title="https://w3id.org/lbdserver#Identifier">Identifier</a>
+      </li>
+      <li>
+         <a href="#PartialProject" title="https://w3id.org/lbdserver#PartialProject">Partial Project</a>
+      </li>
+      <li>
+         <a href="#ProjectRegistry" title="https://w3id.org/lbdserver#ProjectRegistry">project registry</a>
+      </li>
+      <li>
+         <a href="#Reference" title="https://w3id.org/lbdserver#Reference">Reference</a>
+      </li>
+      <li>
+         <a href="#ReferenceRegistry" title="https://w3id.org/lbdserver#ReferenceRegistry">Reference Registry</a>
+      </li>
+      <li>
+         <a href="#Registry" title="https://w3id.org/lbdserver#Registry">
+            <span>registry</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Satellite" title="https://w3id.org/lbdserver#Satellite">Satellite</a>
+      </li>
+      <li>
+         <a href="#ServiceRegistry" title="https://w3id.org/lbdserver#ServiceRegistry">Service Registry</a>
+      </li>
+      <li>
+         <a href="#SparqlSatellite" title="https://w3id.org/lbdserver#SparqlSatellite">SPARQL satellite</a>
+      </li>
+   </ul>
+   <div class="entity" id="Aggregator">
+      <h3>aggregator<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/lbdserver#Aggregator</p>
+      <div class="comment">
+         <span class="markdown">An lbds:Aggregator is an ldp:Container instance on a Solid Pod. Contrary to classic Solid-based LDP containers, an aggregator may also point to remote resources and containers.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="http://www.w3.org/ns/ldp#Container"
+               target="_blank"
+               title="http://www.w3.org/ns/ldp#Container">container</a>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#ProjectRegistry" title="https://w3id.org/lbdserver#ProjectRegistry">project registry</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#aggregates" title="https://w3id.org/lbdserver#aggregates">aggregates</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Concept">
+      <h3>Concept<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/lbdserver#Concept</p>
+      <div class="comment">
+         <span class="markdown">An lbds:Concept is an abstract concept, which should only be semantically enriched via lbds:Reference instances.</span>
+      </div>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hasReference" title="https://w3id.org/lbdserver#hasReference">has reference</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="DatasetRegistry">
+      <h3>Dataset Registry<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/lbdserver#DatasetRegistry</p>
+      <div class="comment">
+         <span class="markdown">A dcat:Catalog containing generic project datasets.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Registry" title="https://w3id.org/lbdserver#Registry">registry</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasDatasetRegistry" title="https://w3id.org/lbdserver#hasDatasetRegistry">has dataset registry</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Identifier">
+      <h3>Identifier<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/lbdserver#Identifier</p>
+      <div class="comment">
+         <span class="markdown">The identifier of a reference in a particular dcat:Distribution instance.</span>
+      </div>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#inDistribution" title="https://w3id.org/lbdserver#inDistribution">in distribution</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasIdentifier" title="https://w3id.org/lbdserver#hasIdentifier">has identifier</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="PartialProject">
+      <h3>Partial Project<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/lbdserver#PartialProject</p>
+      <div class="comment">
+         <span class="markdown">An lbd:container with well-defined contributions of one stakeholder in the federated project.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="http://www.w3.org/ns/dcat#Catalog"
+               target="_blank"
+               title="http://www.w3.org/ns/dcat#Catalog">catalog</a>, <a href="http://www.w3.org/ns/ldp#Container"
+               target="_blank"
+               title="http://www.w3.org/ns/ldp#Container">container</a>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hasRegistry" title="https://w3id.org/lbdserver#hasRegistry">has Registry</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasDatasetRegistry" title="https://w3id.org/lbdserver#hasDatasetRegistry">has dataset registry</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasReferenceRegistry" title="https://w3id.org/lbdserver#hasReferenceRegistry">has reference registry</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasServiceRegistry" title="https://w3id.org/lbdserver#hasServiceRegistry">has service registry</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#partOfProject" title="https://w3id.org/lbdserver#partOfProject">part of project</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ProjectRegistry">
+      <h3>project registry<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/lbdserver#ProjectRegistry</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Aggregator" title="https://w3id.org/lbdserver#Aggregator">aggregator</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasProjectRegistry" title="https://w3id.org/lbdserver#hasProjectRegistry">has project registry</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Reference">
+      <h3>Reference<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/lbdserver#Reference</p>
+      <div class="comment">
+         <span class="markdown">An lbds:Reference is the digital manifestation of an abstract concept (lbds:Concept).</span>
+      </div>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hasIdentifier" title="https://w3id.org/lbdserver#hasIdentifier">has identifier</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#inDataset" title="https://w3id.org/lbdserver#inDataset">in dataset</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasReference" title="https://w3id.org/lbdserver#hasReference">has reference</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ReferenceRegistry">
+      <h3>Reference Registry<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/lbdserver#ReferenceRegistry</p>
+      <div class="comment">
+         <span class="markdown">A dcat:Catalog instance that refers to a registry with lbds:Concept-s and their references (lbds:Reference) and identifiers (lbds:Identifier).</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Registry" title="https://w3id.org/lbdserver#Registry">registry</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasReferenceRegistry" title="https://w3id.org/lbdserver#hasReferenceRegistry">has reference registry</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Registry">
+      <h3>registry<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/lbdserver#Registry</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="http://www.w3.org/ns/dcat#Catalog"
+               target="_blank"
+               title="http://www.w3.org/ns/dcat#Catalog">catalog</a>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#DatasetRegistry" title="https://w3id.org/lbdserver#DatasetRegistry">Dataset Registry</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#ReferenceRegistry" title="https://w3id.org/lbdserver#ReferenceRegistry">Reference Registry</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#ServiceRegistry" title="https://w3id.org/lbdserver#ServiceRegistry">Service Registry</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasRegistry" title="https://w3id.org/lbdserver#hasRegistry">has Registry</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Satellite">
+      <h3>Satellite<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/lbdserver#Satellite</p>
+      <div class="comment">
+         <span class="markdown">An lbds:Satellite is a highly trusted service, connected to very few Solid Pods. It may function as an alternative storage mechanism, providing specific access to (nested) ldp:Containers, dcat:Datasets, dcat:Catalogs or dcat:Distributions. Satellites can also be thought of as 'digital assistents' to a Pod, aiding in synchronisation, data management etc. When working on a Solid Pod, it must be able to check access rights.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="http://www.w3.org/ns/dcat#DataService"
+               target="_blank"
+               title="http://www.w3.org/ns/dcat#DataService">data service</a>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#SparqlSatellite" title="https://w3id.org/lbdserver#SparqlSatellite">SPARQL satellite</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasSatellite" title="https://w3id.org/lbdserver#hasSatellite">has Satellite</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ServiceRegistry">
+      <h3>Service Registry<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/lbdserver#ServiceRegistry</p>
+      <div class="comment">
+         <span class="markdown">A dcat:Catalog containing datasets which refer to services.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Registry" title="https://w3id.org/lbdserver#Registry">registry</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasServiceRegistry" title="https://w3id.org/lbdserver#hasServiceRegistry">has service registry</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="SparqlSatellite">
+      <h3>SPARQL satellite<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/lbdserver#SparqlSatellite</p>
+      <div class="comment">
+         <span class="markdown">A SPARQL Satellite is a specifiic sort of satellite, mirroring RDF resources on the Pod and allowing to query their union with SPARQL. The satellite should check the access rights for every result it acquires.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Satellite" title="https://w3id.org/lbdserver#Satellite">Satellite</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasSparqlSatellite" title="https://w3id.org/lbdserver#hasSparqlSatellite">has SPARQL satellite</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+</div><div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="objectproperties">
+   <h3 id="properties" class="list">Object Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#aggregates" title="https://w3id.org/lbdserver#aggregates">
+            <span>aggregates</span>
+         </a>
+      </li>
+      <li>
+         <a href="#hasDatasetRegistry" title="https://w3id.org/lbdserver#hasDatasetRegistry">has dataset registry</a>
+      </li>
+      <li>
+         <a href="#hasIdentifier" title="https://w3id.org/lbdserver#hasIdentifier">has identifier</a>
+      </li>
+      <li>
+         <a href="#hasProjectRegistry" title="https://w3id.org/lbdserver#hasProjectRegistry">has project registry</a>
+      </li>
+      <li>
+         <a href="#hasReference" title="https://w3id.org/lbdserver#hasReference">has reference</a>
+      </li>
+      <li>
+         <a href="#hasReferenceRegistry" title="https://w3id.org/lbdserver#hasReferenceRegistry">has reference registry</a>
+      </li>
+      <li>
+         <a href="#hasRegistry" title="https://w3id.org/lbdserver#hasRegistry">has Registry</a>
+      </li>
+      <li>
+         <a href="#hasSatellite" title="https://w3id.org/lbdserver#hasSatellite">has Satellite</a>
+      </li>
+      <li>
+         <a href="#hasServiceRegistry" title="https://w3id.org/lbdserver#hasServiceRegistry">has service registry</a>
+      </li>
+      <li>
+         <a href="#hasSparqlSatellite" title="https://w3id.org/lbdserver#hasSparqlSatellite">has SPARQL satellite</a>
+      </li>
+      <li>
+         <a href="#inDataset" title="https://w3id.org/lbdserver#inDataset">in dataset</a>
+      </li>
+      <li>
+         <a href="#inDistribution" title="https://w3id.org/lbdserver#inDistribution">in distribution</a>
+      </li>
+      <li>
+         <a href="#partOfProject" title="https://w3id.org/lbdserver#partOfProject">part of project</a>
+      </li>
+   </ul>
+   <div class="entity" id="aggregates">
+      <h3>aggregates<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/lbdserver#aggregates</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="http://www.w3.org/ns/ldp#contains"
+                  target="_blank"
+                  title="http://www.w3.org/ns/ldp#contains">contains</a>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Aggregator" title="https://w3id.org/lbdserver#Aggregator">aggregator</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasDatasetRegistry">
+      <h3>has dataset registry<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/lbdserver#hasDatasetRegistry</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#hasRegistry" title="https://w3id.org/lbdserver#hasRegistry">has Registry</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#PartialProject" title="https://w3id.org/lbdserver#PartialProject">Partial Project</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#DatasetRegistry" title="https://w3id.org/lbdserver#DatasetRegistry">Dataset Registry</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasIdentifier">
+      <h3>has identifier<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/lbdserver#hasIdentifier</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Reference" title="https://w3id.org/lbdserver#Reference">Reference</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Identifier" title="https://w3id.org/lbdserver#Identifier">Identifier</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasProjectRegistry">
+      <h3>has project registry<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/lbdserver#hasProjectRegistry</p>
+      <div class="description">
+         <dl>
+            <dt>has range</dt>
+            <dd>
+               <a href="#ProjectRegistry" title="https://w3id.org/lbdserver#ProjectRegistry">project registry</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasReference">
+      <h3>has reference<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/lbdserver#hasReference</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Concept" title="https://w3id.org/lbdserver#Concept">Concept</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Reference" title="https://w3id.org/lbdserver#Reference">Reference</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasReferenceRegistry">
+      <h3>has reference registry<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/lbdserver#hasReferenceRegistry</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#hasRegistry" title="https://w3id.org/lbdserver#hasRegistry">has Registry</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#PartialProject" title="https://w3id.org/lbdserver#PartialProject">Partial Project</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#ReferenceRegistry" title="https://w3id.org/lbdserver#ReferenceRegistry">Reference Registry</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasRegistry">
+      <h3>has Registry<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/lbdserver#hasRegistry</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="http://www.w3.org/ns/ldp#contains"
+                  target="_blank"
+                  title="http://www.w3.org/ns/ldp#contains">contains</a>
+            </dd>
+            <dt>has sub-properties</dt>
+            <dd>
+               <a href="#hasDatasetRegistry" title="https://w3id.org/lbdserver#hasDatasetRegistry">has dataset registry</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#hasReferenceRegistry" title="https://w3id.org/lbdserver#hasReferenceRegistry">has reference registry</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#hasServiceRegistry" title="https://w3id.org/lbdserver#hasServiceRegistry">has service registry</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#PartialProject" title="https://w3id.org/lbdserver#PartialProject">Partial Project</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Registry" title="https://w3id.org/lbdserver#Registry">registry</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasSatellite">
+      <h3>has Satellite<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/lbdserver#hasSatellite</p>
+      <div class="description">
+         <dl>
+            <dt>has sub-properties</dt>
+            <dd>
+               <a href="#hasSparqlSatellite" title="https://w3id.org/lbdserver#hasSparqlSatellite">has SPARQL satellite</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="http://www.w3.org/ns/dcat#Dataset"
+                  target="_blank"
+                  title="http://www.w3.org/ns/dcat#Dataset">dataset</a>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Satellite" title="https://w3id.org/lbdserver#Satellite">Satellite</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasServiceRegistry">
+      <h3>has service registry<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/lbdserver#hasServiceRegistry</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#hasRegistry" title="https://w3id.org/lbdserver#hasRegistry">has Registry</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#PartialProject" title="https://w3id.org/lbdserver#PartialProject">Partial Project</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#ServiceRegistry" title="https://w3id.org/lbdserver#ServiceRegistry">Service Registry</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasSparqlSatellite">
+      <h3>has SPARQL satellite<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/lbdserver#hasSparqlSatellite</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#hasSatellite" title="https://w3id.org/lbdserver#hasSatellite">has Satellite</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#SparqlSatellite" title="https://w3id.org/lbdserver#SparqlSatellite">SPARQL satellite</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="inDataset">
+      <h3>in dataset<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/lbdserver#inDataset</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Reference" title="https://w3id.org/lbdserver#Reference">Reference</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/ns/dcat#Dataset"
+                  target="_blank"
+                  title="http://www.w3.org/ns/dcat#Dataset">dataset</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="inDistribution">
+      <h3>in distribution<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/lbdserver#inDistribution</p>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="http://www.w3.org/2002/07/owl#topObjectProperty"
+                  target="_blank"
+                  title="http://www.w3.org/2002/07/owl#topObjectProperty">top object property</a>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Identifier" title="https://w3id.org/lbdserver#Identifier">Identifier</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/ns/dcat#Distribution"
+                  target="_blank"
+                  title="http://www.w3.org/ns/dcat#Distribution">distribution</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="partOfProject">
+      <h3>part of project<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/lbdserver#partOfProject</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#PartialProject" title="https://w3id.org/lbdserver#PartialProject">Partial Project</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+<sup class="type-ni" title="Named Individuals">ni</sup>: Named Individuals
+</div>
+</div>
