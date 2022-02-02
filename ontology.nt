@@ -1,7 +1,5 @@
 <https://w3id.org/lbdserver#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
 <https://w3id.org/lbdserver#> <http://www.w3.org/2002/07/owl#versionIRI> <urn:absolute:0.0.1> .
-<https://w3id.org/lbdserver#> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/ns/dcat> .
-<https://w3id.org/lbdserver#> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/ns/ldp#> .
 <https://w3id.org/lbdserver#> <http://purl.org/dc/terms/contributor> "Erik Mannens" .
 <https://w3id.org/lbdserver#> <http://purl.org/dc/terms/contributor> "Jakob Beetz" .
 <https://w3id.org/lbdserver#> <http://purl.org/dc/terms/contributor> "Pieter Pauwels" .
@@ -13,10 +11,37 @@
 # 
 # #################################################################
 # #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
 # #    Object Properties
 # #
 # #################################################################
 # 
+# 
+# http://www.w3.org/ns/ldp#contains
+<http://www.w3.org/ns/ldp#contains> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 # 
 # https://w3id.org/lbdserver#aggregates
 <https://w3id.org/lbdserver#aggregates> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -64,6 +89,7 @@
 # https://w3id.org/lbdserver#hasSatellite
 <https://w3id.org/lbdserver#hasSatellite> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/lbdserver#hasSatellite> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/dcat#Dataset> .
+<http://www.w3.org/ns/dcat#Dataset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/lbdserver#hasSatellite> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/lbdserver#Satellite> .
 <https://w3id.org/lbdserver#hasSatellite> <http://www.w3.org/2000/01/rdf-schema#label> "has Satellite"@en .
 # 
@@ -91,6 +117,7 @@
 <https://w3id.org/lbdserver#inDistribution> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
 <https://w3id.org/lbdserver#inDistribution> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/lbdserver#Identifier> .
 <https://w3id.org/lbdserver#inDistribution> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/dcat#Distribution> .
+<http://www.w3.org/ns/dcat#Distribution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/lbdserver#inDistribution> <http://www.w3.org/2000/01/rdf-schema#label> "in distribution"@en .
 # 
 # https://w3id.org/lbdserver#partOfProject
@@ -106,6 +133,19 @@
 # #
 # #################################################################
 # 
+# 
+# http://www.w3.org/ns/dcat#Catalog
+<http://www.w3.org/ns/dcat#Catalog> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/ns/dcat#DataService
+<http://www.w3.org/ns/dcat#DataService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/ns/dcat#Dataset
+# 
+# http://www.w3.org/ns/dcat#Distribution
+# 
+# http://www.w3.org/ns/ldp#Container
+<http://www.w3.org/ns/ldp#Container> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # https://w3id.org/lbdserver#Aggregator
 <https://w3id.org/lbdserver#Aggregator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
